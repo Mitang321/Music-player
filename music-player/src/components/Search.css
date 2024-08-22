@@ -1,0 +1,38 @@
+.search {
+  margin: 20px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search li {
+  margin: 10px 0;
+}
+
+.search button {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #1ed760;
+}

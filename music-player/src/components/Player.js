@@ -1,6 +1,6 @@
-// src/components/Player.js
 import React, { useState } from "react";
 import { Howl } from "howler";
+import Search from "./Search";
 import "./Player.css";
 
 function Player() {
@@ -37,14 +37,9 @@ function Player() {
 
   return (
     <div className="player">
+      <Search onSelectTrack={loadSound} />
       <h2 className="track-name">{trackName || "No track loaded"}</h2>
       <div className="controls">
-        <button
-          className="control-btn"
-          onClick={() => loadSound("/path/to/your/audio/file.mp3")}
-        >
-          Load Track
-        </button>
         <button
           className="control-btn"
           onClick={playSound}
